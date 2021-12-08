@@ -15,6 +15,9 @@ local width = 5
 -- icons in the app drawer will be 32x32
 local icon_size = 32
 
+-- radius for the corners of the buttons and popup window
+local border_radius = beautiful.border_radius or 4
+
 -- create a table that contains the .desktop information for every program
 local programs_list = { }
 awful.spawn.with_line_callback([[bash -c 'find $HOME/Desktop -type f -name "*.desktop"']], {
@@ -40,7 +43,7 @@ local app_drawer = awful.popup {
     ontop = true,
     visible = false,
     shape = function(cr, width, height)
-        gears.shape.rounded_rect(cr, width, height, 4)
+        gears.shape.rounded_rect(cr, width, height, border_radius)
     end,
     border_width = 0,
     offset = { x = 5, y = 5 },
@@ -68,7 +71,7 @@ local function generate_drawer()
 			},
 			bg = gears.color.transparent,
 			shape = function(cr, width, height)
-        		gears.shape.rounded_rect(cr, width, height, 4)
+        		gears.shape.rounded_rect(cr, width, height, border_radius)
     		end,
 			widget = wibox.container.background,
 		}
