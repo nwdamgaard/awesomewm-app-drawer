@@ -1,12 +1,13 @@
 # App-Drawer
-A minimalistic app drawer for awesomewm. Uses .desktop format.
+A minimalistic app drawer for Awesome Window Manager. Uses .desktop format.
+![A beautiful screenshot of this incredible app drawer](screenshot.png "Screenshot of app-drawer")
 
 # Installation
 Clone this git repo into your ~/.config/awesome folder:
 ```git clone https://github.com/nwdamgaard/awesomewm-app-drawer.git```
 
 # Usage
-1. Add ```local app_drawer_widget = require("app-drawer.drawer")``` to your rc.lua file. NOTE: this **must** be placed after the ```beautiful.init``` line.
+1. Add ```local app_drawer_widget = require("app-drawer.drawer")``` to your rc.lua file. NOTE: this **must** be placed after the ```beautiful.init``` command.
 2. Use ```app_drawer_widget()``` to create the widget. I have mine in my top bar.
 
 # Config
