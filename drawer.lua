@@ -6,7 +6,7 @@ local menubar = require("menubar")
 local naughty = require("naughty")
 
 local HOME = os.getenv('HOME')
-local ICON_DIR = HOME .. '/.config/awesome/app-drawer/'
+local ICON_DIR = HOME .. '/.config/awesome/awesomewm-app-drawer/'
 local DESKTOP_DIR = HOME .. '/Desktop/'
 
 -- the app drawer will be 5 icons wide

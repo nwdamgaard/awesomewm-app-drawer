@@ -7,7 +7,7 @@ Clone this git repo into your ~/.config/awesome folder:\
 ```cd ~/.config/awesome && git clone https://github.com/nwdamgaard/awesomewm-app-drawer.git```
 
 # Usage
-1. Add ```local app_drawer_widget = require("app-drawer.drawer")``` to your rc.lua file. NOTE: this **must** be placed after the ```beautiful.init``` command.
+1. Add ```local app_drawer_widget = require("awesomewm-app-drawer.drawer")``` to your rc.lua file. NOTE: this **must** be placed after the ```beautiful.init``` command.
 2. Use ```app_drawer_widget()``` to create the widget. I have mine in my top bar.
 
 # Config
